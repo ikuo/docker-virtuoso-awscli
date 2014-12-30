@@ -2,7 +2,7 @@ FROM nicholsn/virtuoso
 MAINTAINER Ikuo Matsumura <makiczar@gmail.com>
 
 # Setup EC2
-RUN apt-get update
+RUN apt-get update && apt-get -y upgrade
 RUN apt-get -y install curl
 RUN apt-get -y install vim python-pip
 RUN pip install awscli
