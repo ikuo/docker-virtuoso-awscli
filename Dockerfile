@@ -1,7 +1,7 @@
 FROM nicholsn/virtuoso
 MAINTAINER Ikuo Matsumura <makiczar@gmail.com>
 
-# Setup EC2
+# Setup AWS CLI
 RUN apt-get update && apt-get -y upgrade
 RUN apt-get -y install curl
 RUN apt-get -y install vim python-pip

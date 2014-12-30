@@ -6,7 +6,7 @@ Dockerfile for virtuoso-opensource with AWS CLI.
 # Building
 
 ```
-docker build -t `whoami`/virtuoso .
+docker build -t `whoami`/virtuoso-awscli .
 ```
 
 # Running
@@ -32,5 +32,5 @@ aws_secret_access_key=...
 Then run the existing image with the content of the config/credential files as follows:
 
 ```
-docker run -it --rm -p 8890:8890 `whoami`/virtuoso "`cat aws/config`" "`cat aws/credentials`"
+docker run -it --rm -p 8890:8890 `whoami`/virtuoso-awscli "`cat aws/config`" "`cat aws/credentials`"
 ```
