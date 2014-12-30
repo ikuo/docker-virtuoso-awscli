@@ -1,3 +1,5 @@
 FROM nicholsn/virtuoso
 MAINTAINER Ikuo Matsumura <makiczar@gmail.com>
-CMD ["/usr/bin/virtuoso-t", "+wait"]
+ADD startup.sh /tmp/startup.sh
+RUN chmod a+x /tmp/startup.sh
+CMD ["/tmp/startup.sh"]
